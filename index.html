@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:wght@600&family=Roboto:wght@400&display=swap">
+    <title>ST.MAURUS (BIEHLE)</title>
+</head>
+<body>
+    <header>
+        <img src="images/archlogo.png" alt="Parish Logo" id="logo">
+        <button id="hamburger-btn">&#9776;</button> <!-- Hamburger Icon -->
+        <nav>
+            <ul>
+                <li><a href="#contacts-section">Home</a></li>
+                <li><a href="#contacts-section">Contacts</a></li>
+                <li><a href="#events-section">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="parallax" id="parallax1">
+        <div class="content">
+            <h1>Welcome to St. Maurus Biehle</h1>
+            <p>We Are Happy Youre Here !</p>
+        </div>
+    </section>
+
+    <!-- This section can be used for general content, between the two parallax sections -->
+    <section id="general-content">
+        <!-- Add any content you want here, e.g., about the parish, news, etc. -->
+        <div class="container">
+            <div class="section">
+                <h2 class="about-header" data-toggle="content1">About Us</h2>
+                <p id="content1" class="about-content">St. Maurus Parish is a community of Catholics in the Archdiocese of St. Louis endeavoring to live out the Joy of the Gospel, and to bring others closer to Our Lord, Jesus Christ, through our commitment to being missionary disciples who know and live the Faith.</p>
+            </div>
+            <!-- <div class="section">
+                <h2 class="about-header" data-toggle="content1">Service Hours</h2>
+                <p id="content1" class="about-content">Sundays: 9:00 AM, 11:00 AM <br> Weekdays: 7:00 AM - 2:00 PM</p>
+            </div> -->
+        </div>
+        
+    </section>
+
+    <section class="parallax" id="parallax2">
+        <div class="card-content">
+            <!-- Add your events info here -->
+            <h2>Mass Hours</h2>
+            <div class="events-flex-container">
+                <div class="event-card">
+                    <img src="images/pexels-pixabay-236339.jpg" alt="Event Image">
+                    <h3>Mass Times</h3>
+                    <p>📅 Sundays, 9:30 am</p>
+                    <p>📅 Wednesday, 8:00 am</p>
+                    <p>📅 Friday, 8:00 am</p>
+                    <p>📅 Second Saturday,5:00 pm</p>
+                    <p>📅 Fourth Saturday, 5:00 pm</p>
+                    <p>📅 Fifth Saturday, 5:00 pm</p>
+                    <p>📍 10198 Highway B </p>
+                    <p>📌  138 St. Joseph Ln.
+                        Perryville, MO 63775-5736 </p>
+                </div>
+    
+                <div class="event-card">
+                    <img src="images/pexels-luis-quintero-2351722.jpg" alt="Event Image">
+                    <h3>Reconciliation Times </h3>
+                    <p>📅 Second Saturday 4:00pm- 4:30 pm</p>
+                    <p>📅 Fourth Saturday 4:00pm- 4:30 pm</p>
+                    <p>📅 Fifth Saturday 4:00pm- 4:30 pm</p>
+                    <p>📍 10198 Highway B </p>
+                    <p>📌  138 St. Joseph Ln.
+                        Perryville, MO 63775-5736 </p>
+                </div>
+    
+                <div class="event-card">
+                    <img src="images/pexels-becerra-govea-photo-10279229.jpg" alt="Event Image">
+                    <h3>Eucharistic Adoration Times</h3>
+                    <p>📅 Wednesday 8:30 am 6:30 pm</p>
+                    <p>📍 10198 Highway B </p>
+                    <p>📌  138 St. Joseph Ln.
+                        Perryville, MO 63775-5736 </p>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Ministry Contacts</h3>
+            <p id="footer-fix">Southern Vicariate Deanery 4</p>
+            <p id="footer-fix">Reverend Michael Benz - Pastor</p>
+            <!-- Add more contacts as needed -->
+        </div>
+    
+        <div class="footer-section" id="contacts-section">
+            <h3>Staff Contacts</h3>
+            <a href="mailto:stjoeapc@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i> stjoeapc@gmail.com
+            </a>
+            <a href="tel:5737882330" class="social-link"> 
+                <i class="fas fa-phone"></i> 573.788.2330
+            </a>
+            <!-- Add more staff emails as needed -->
+        </div>
+    
+        <div class="footer-section" id="events-section">
+            <h3>Event Links</h3>
+            <a href="https://m.facebook.com/profile.php?id=255787457918195" class="social-link">
+                <i class="fab fa-facebook-f"></i> Facebook Profile
+            </a>
+            
+            <!-- Add more links as needed -->
+        </div>
+        <p class="footer-copyright">&copy; 2023 ST.Maurus (Biehle). All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

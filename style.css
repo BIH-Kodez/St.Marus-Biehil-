@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0,24,51,0.8889);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+#logo {
+    max-height: 90px;  /* Adjust this as per your requirement */
+    width: auto;  /* Maintain the image aspect ratio */
+    margin-right: 20px;  /* Optional: Space between logo and navigation */
+}
+
+#hamburger-btn {
+    display: none; /* Hide by default */
+    font-size: 24px; /* Hamburger size */
+    color: #fff; /* Hamburger color */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    margin-right: 15px; /* Optional spacing between the list items */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Initial transparent underline */
+    transition: border-bottom-color 0.3s; /* Animation for the underline */
+}
+
+nav a:hover {
+    border-bottom-color: #fff; /* Color of the underline when hovering */
+}
+
+.content h1 {
+    font-size: 48px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700; /* Bold for h1 */
+    word-wrap: break-word;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular weight for paragraphs */
+}
+
+
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 600; /* Semi-bold for h2 */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular weight for paragraphs */
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+#parallax1 {
+    background-image: url('images/Churchoutside.png');
+}
+
+#parallax2 {
+    background-image: url('images/ChurchInside.png');
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+}
+
+/* .content h1, .content h2, .content p {
+    color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+.container {
+    max-width: 100%; /* Limiting the width to make text readable on large screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 10px 20px; /* Padding on the sides to prevent content from touching the edge on small screens */
+    background-color: #fff; /* White background for the inner container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: rgba(0,24,51,0.8889);
+    border: 1px solid #fff;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+}
+
+.about-header {
+    font-size: 2em; /* Make the header bigger */
+    cursor: pointer; /* Change cursor to a hand when hovering over the header */
+    color: #fff;
+    border: 2px solid transparent; /* Set an initial transparent border to avoid resizing issues */
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for the border and hover effect */
+}
+
+.about-header:hover {
+    padding: 10px;
+    border-color: #fff; /* The color of the border when hovering */
+    transform: scale(1.05); /* Slightly enlarging the h2 for emphasis */
+}
+
+.about-content {
+    opacity: 0; /* Initially hide the content */
+    transform: translateX(-100%); /* Push content out of view to the left */
+    transition: opacity 0.4s, transform 0.4s; /* Transition effect for smoother animation */
+    color: #fff;
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 30px; /* Space between paragraphs */
+}
+
+
+ h3 {
+    color: #333; /* Darker text color for headings */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+
+/* Add more styles or modify these as per your preferences */
+
+
+.card-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.content h1, .content h2, .content p {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.events-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Allows cards to wrap to the next line on smaller screens */
+    gap: 20px;  /* Adds space between cards */
+}
+
+.event-card {
+    width: 30%;  /* width of each card */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: rgba(199, 197, 197, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Hover effect */
+}
+
+.event-card p {
+    color: #555; /* Slightly lighter text color for paragraphs */
+}
+
+.event-card:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;  /* Image takes full width of card */
+    margin-bottom: 10px;
+}
+
+/* Existing styles */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    background: rgba(0,24,51,0.8889); 
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Mobile responsiveness: stacks the columns on smaller screens */
+@media only screen and (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 10px; 
+}
+
+.footer-section p, .footer-section a {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.footer-section a {
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.footer-section a:hover {
+    color: #ddd; 
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-copyright {
+    grid-column: span 3; /* span across all columns */
+    text-align: center; 
+    padding: 10px 0; 
+    margin-top: 20px; 
+    background: rgba(0,24,51,0.8889);
+}
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    }
+    
+    #logo {
+        margin-right: 0; /* Remove margin between logo and menu on smaller screens */
+        margin-bottom: 10px; /* Add some space below the logo */
+    }
+
+    nav ul {
+        width: 100%; /* Full width */
+        text-align: center; /* Center the links */
+    }
+
+    nav li {
+        float: none; /* Stack the links vertically */
+        display: inline-block; /* Align the items in a line for a horizontal menu */
+        margin-right: 0; /* Remove the margin */
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Stack the logo and navigation vertically */
+    }
+
+    nav ul {
+        display: block; /* Stack the list items vertically */
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding */
+        border-bottom: 1px solid #fff; /* Add a full-width border to each item */
+    }
+}
+
+
+/* Responsive rule for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr; /* One column */
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        width: 90%;  /* Cards take almost full width on smaller screens */
+        margin: auto;  /* Center cards */
+    }
+}
